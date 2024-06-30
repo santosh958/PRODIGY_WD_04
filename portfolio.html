@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="portfoliostyles.css">
+</head>
+<body>
+    <header>
+        <h1>John Doe</h1>
+        <img src="C:\Users\Santosh\Downloads\WhatsApp Image 2024-06-30 at 1.12.08 PM (1).jpeg" alt="John Doe">
+        <p>Web Developer | JavaScript Enthusiast</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#about" onclick="changeBackgroundColor('about', '#ffebcd')">About Me</a></li>
+            <li><a href="#projects" onclick="changeBackgroundColor('projects', '#e6e6fa')">Projects</a></li>
+            <li><a href="#skills" onclick="changeBackgroundColor('skills', '#ffe4e1')">Skills</a></li>
+            <li><a href="#contact" onclick="changeBackgroundColor('contact', '#fafad2')">Contact</a></li>
+        </ul>
+    </nav>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>
+            I am currently pursuing my Bachelor of Technology (B.Tech) in my third year at RVR & JC College of Engineering. 
+            Prior to this, I completed my intermediate education at Narayana Junior College, where I achieved a rank of 7309 in the EAMCET examination. 
+            My academic journey began at Sri Majety High School, where I completed my 10th grade during the lockdown period. 
+            Although I aimed for admission into an NIT, I was slightly disappointed with my 90 percentile score in the JEE exam. 
+            Nonetheless, I am committed to leveraging my experiences and striving for excellence in my ongoing studies and future endeavors.
+        </p>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <h3>Speech-to-Text Converter using Machine Learning</h3>
+            <p>
+                Developed a robust speech-to-text converter leveraging machine learning algorithms to accurately transcribe spoken language into written text. 
+                This project involved preprocessing audio data, feature extraction, and training a neural network to recognize and convert speech patterns.
+                The application is designed to improve accessibility and enhance user interaction with technology.
+            </p>
+        </div>
+        <div class="project">
+            <h3>Facial Recognition System</h3>
+            <p>
+                Implemented a facial recognition system using advanced computer vision techniques and machine learning models. 
+                The system can accurately identify and verify individuals based on their facial features. 
+                This project includes facial detection, alignment, feature extraction, and classification stages, 
+                making it suitable for security and authentication applications.
+            </p>
+        </div>
+    </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-list">
+            <h3>Technical Skills</h3>
+            <ul>
+                <li>Web Development</li>
+                <li>JavaScript</li>
+                <li>Machine Learning</li>
+                <li>Computer Vision</li>
+                <li>Neural Networks</li>
+            </ul>
+        </div>
+        <div class="skills-list">
+            <h3>Non-Technical Skills</h3>
+            <ul>
+                <li>Problem-Solving</li>
+                <li>Communication</li>
+                <li>Teamwork</li>
+            </ul>
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <p>Follow me on:
+            <a href="https://linkedin.com">LinkedIn</a>,
+            <a href="https://github.com">GitHub</a>,
+            <a href="https://twitter.com">Twitter</a>
+        </p>
+    </section>
+    <script>
+         function changeBackgroundColor(sectionId, color) {
+    document.getElementById(sectionId).style.backgroundColor = color;
+}
+
+    </script>
+</body>
+</html>
